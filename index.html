@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	table {
+		border-collapse: collapse;
+		border: 1px solid #DDD;
+	}
+	td, th {
+		text-align: center;
+		border: 1px solid #DDD;
+	}
+	input {
+		border: 1px solid #DDD;
+		border-radius: .3rem;
+		padding: .5rem .5rem;
+		outline: none;
+		-webkit-appearance: none;
+	}
+</style>
+<script type="text/javascript" src="./jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./MJDT.2.0.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		//Example-01: 
+		/*
+			MJ_dataTable.generate('/tableData.php')
+		*/
+		//Example-02:
+		var options={
+			'columns':['id', 'nickname', 'age', 'id&-&age', '<span class="showFullContent" showLength="8">&description&</span>', 'created_at', 'updated_at', '<a href="#">编辑</a>'],
+			'first_control_columns' : false,
+			'method': 'post',
+			'tableNode':'.myTable',
+			'searchNode': '.myForm',
+			'title':'学员列表',
+			'server_url': '/data.php',
+		};
+		MJDT.init(options).generate();
+	}
+</script>
+</head>
+<body>
+	<form class="myForm">
+		<input type="text" value="" name="name" />
+		<input type="submit" value="查询" />
+	</form>
+	<table class="myTable">
+		<tr>
+			<th>ID</th>
+			<th>Nickname</th>
+			<th>Age</th>
+			<th>ID+Age</th>
+			<th>Description</th>
+			<th>created_at</th>
+			<th>updated_at</th>
+			<th>操作</th>
+		</tr>
+	</table>
+</body>
+</html>
