@@ -1,5 +1,4 @@
-# MJDT (MJ dataTable javascript plugin)
-javascript 表格数据渲染
+# MJDT javascript 表格数据渲染
  
 ## 初始化方法可以查看底部init方法
 - 后台翻页数据加载框架
