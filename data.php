@@ -3,27 +3,27 @@
 $studentsAll = [
     [
         'id' => 1,
-        'nickname' => 'zhangsan',
-        'age' => 18,
+        'nickname' => '张三',
+        'age' => 10,
+        'sex' => 1,
         'description' => '张三是一个好学生，好好学习天天向上...',
-        'created_at' => date('Y-m-d H:i:s'),
-        'updated_at' => date('Y-m-d H:i:s')
+        'created_at' => date('Y-m-d H:i:s')
     ],
     [
         'id' => 2,
         'nickname' => '李四',
-        'age' => 17,
+        'age' => 11,
+        'sex' => 2,
         'description' => '李四是一个好学生，好好学习天天向上...',
-        'created_at' => date('Y-m-d H:i:s'),
-        'updated_at' => date('Y-m-d H:i:s')
+        'created_at' => date('Y-m-d H:i:s')
     ],
     [
         'id' => 3,
         'nickname' => '王五',
-        'age' => 18,
+        'age' => 12,
+        'sex' => 0,
         'description' => '王五是一个好学生，好好学习天天向上...',
-        'created_at' => date('Y-m-d H:i:s'),
-        'updated_at' => date('Y-m-d H:i:s')
+        'created_at' => date('Y-m-d H:i:s')
     ]
 ];
 // 分页

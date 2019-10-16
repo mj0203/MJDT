@@ -26,11 +26,17 @@
 	window.onload = function(){
 		//Example-01: 
 		/*
-			MJ_dataTable.generate('/tableData.php')
+			MJDT.generate('/data.php')
 		*/
 		//Example-02:
-		var options={
-			'columns':['id', 'nickname', 'age', 'id&-&age', '<span class="showFullContent" showLength="8">&description&</span>', 'created_at', 'updated_at', '<a href="#">编辑</a>'],
+		/*
+			MJDT.drawSearch()
+			OR
+			MJDT.drawSearch('.myForm')
+		*/
+		//Example-03:
+		/* var options={
+			'columns':['id', 'nickname', 'age', 'id&-&age', '<span class="showFullContent" showLength="8">&description&</span>', '*calcSex(sex)*', 'created_at', '<a href="#">编辑</a>'],
 			'first_control_columns' : false,
 			'method': 'post',
 			'tableNode':'.myTable',
@@ -38,7 +44,16 @@
 			'title':'学员列表',
 			'server_url': '/data.php',
 		};
-		MJDT.init(options).generate();
+		MJDT.calcSex = function(data, allData){
+			var sexVal = '未知'
+			if(data.sex==1){
+				sexVal = '男'
+			}else if(data.sex==2){
+				sexVal = '女'
+			}
+			return sexVal
+		}
+		MJDT.init(options).generate(); */
 	}
 </script>
 </head>
@@ -54,7 +69,7 @@
 			<th>Age</th>
 			<th>ID+Age</th>
 			<th>Description</th>
-			<th>created_at</th>
+			<th>sex</th>
 			<th>updated_at</th>
 			<th>操作</th>
 		</tr>
