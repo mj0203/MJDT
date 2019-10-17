@@ -173,50 +173,50 @@ columns : '*myCustomFunction()*'
 需要在MJ_dataTable中提前定义解析方法
 10.7.1 columns : '*myCustomFunction(field1&field2)*'
 MJDT.myCustomFunction = function(callbackData, All){
-		#something...
-		#第一个参数包含填写的字段
-		callbackData.field1
-		callbackData.field2
-		#第二个参数包含所有字段
-		All.id
-		All.name
-		...
+    #something...
+    #第一个参数包含填写的字段
+    callbackData.field1
+    callbackData.field2
+    #第二个参数包含所有字段
+    All.id
+    All.name
+    ...
 }
 10.7.1 columns : '*myCustomFunction()*'
 MJDT.myCustomFunction = function(All){
-		#默认为所有字段
-		All.id
-		All.name
-		...
+    #默认为所有字段
+    All.id
+    All.name
+    ...
 }
 ```
 
 ### 11. init(options) #初始化配置
 参数默认值即可维持基础功能
 
-|key|value|描述|
-|:-----  |:-----|
-| first_control_columns  | true或false                                                         | 是否开启控制列      |
-| repeat_page            | true或false                                                         | 是否允许重复翻页     |
-| onJumpPage             | true或false                                                         | 是否启用跳页       |
-| title                  | false或 title标题                                                     | 文档标题         |
-| showPageList           | true或false                                                         | 是否启用翻页功能     |
-| overflowX              | true或false                                                         | 是否允许横向滚动     |
-| contros                | [{'ysort':false, 'search':true}, {'ysort':false, 'search':false}]  | 控制对象         |
-| orderColumn            | {}                                                                 | 需要排序字段       |
-| page_default_list      | 10                                                                 | 默认每页数量       |
-| page_gap               | 5                                                                  | 页码间隙         |
-| page                   | 1                                                                  | 页码           |
-| page_size              | 10                                                                 | 每页条数         |
-| page_select            | [10,20,40,60,80,100]                                               | 页码选择         |
-| server_url             | request URL                                                        | 请求数据url      |
-| paramData              | requestData                                                        | 请求参数         |
-| method                 | POST                                                               | 方法           |
-| next_btn_name          | 下一页                                                                | 配置文案         |
-| prev_btn_name          | 上一页                                                                | 配置文案         |
-| end_btn_name           | 末页                                                                 | 配置文案         |
-| columns                | {}                                                                 | 字段列表排序       |
-| tableNode              | .tableNodeClassName                                                | table节点名称    |
-| globalStyle            | {}                                                                 | 全局样式容器       |
-| onReturnSubmit         | true或false                                                         | 是否启用回车搜索     |
-| maskTable              | true或false                                                         | 查询数据时是否启用遮罩  |
+key|value|描述
+:-----  |:-----
+first_control_columns  | true或false   | 是否开启控制列
+repeat_page            | true或false   | 是否允许重复翻页
+onJumpPage             | true或false   | 是否启用跳页
+title                  | false或 title标题| 文档标题
+showPageList           | true或false   | 是否启用翻页功能
+overflowX              | true或false   | 是否允许横向滚动
+contros                | [{'ysort':false, 'search':true}, {'ysort':false, 'search':false}]  | 控制对象
+orderColumn            | {}       | 需要排序字段
+page_default_list      | 10       | 默认每页数量
+page_gap               | 5        | 页码间隙
+page                   | 1        | 页码
+page_size              | 10| 每页条数
+page_select            | [10,20,40,60,80,100]| 页码选择
+server_url             | request URL| 请求数据url
+paramData              | requestData| 请求参数
+method                 | POST| 方法
+next_btn_name          | 下一页 | 配置文案
+prev_btn_name          | 上一页| 配置文案
+end_btn_name           | 末页| 配置文案
+columns                | {}| 字段列表排序
+tableNode              | .tableNodeClassName| table节点名称
+globalStyle            | {}| 全局样式容器
+onReturnSubmit         | true或false| 是否启用回车搜索
+maskTable              | true或false| 查询数据时是否启用遮罩
