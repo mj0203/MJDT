@@ -193,30 +193,30 @@ MJDT.myCustomFunction = function(All){
 
 ### 11. init(options) #初始化配置
 参数默认值即可维持基础功能
-
-key|value|描述
-:-----  |:-----
-first_control_columns  | true或false   | 是否开启控制列
-repeat_page            | true或false   | 是否允许重复翻页
-onJumpPage             | true或false   | 是否启用跳页
-title                  | false或 title标题| 文档标题
-showPageList           | true或false   | 是否启用翻页功能
-overflowX              | true或false   | 是否允许横向滚动
-contros                | [{'ysort':false, 'search':true}, {'ysort':false, 'search':false}]  | 控制对象
-orderColumn            | {}       | 需要排序字段
-page_default_list      | 10       | 默认每页数量
-page_gap               | 5        | 页码间隙
-page                   | 1        | 页码
-page_size              | 10| 每页条数
-page_select            | [10,20,40,60,80,100]| 页码选择
-server_url             | request URL| 请求数据url
-paramData              | requestData| 请求参数
-method                 | POST| 方法
-next_btn_name          | 下一页 | 配置文案
-prev_btn_name          | 上一页| 配置文案
-end_btn_name           | 末页| 配置文案
-columns                | {}| 字段列表排序
-tableNode              | .tableNodeClassName| table节点名称
-globalStyle            | {}| 全局样式容器
-onReturnSubmit         | true或false| 是否启用回车搜索
-maskTable              | true或false| 查询数据时是否启用遮罩
+<table>
+  <tr><th>属性</th><th>值</th><th>描述</th></tr>
+  <tr><td>first_control_columns</td><td>true或false</td><td>是否开启控制列</td></tr>
+<tr><td>repeat_page</td><td>true或false</td><td>是否允许重复翻页</td></tr>
+<tr><td>onJumpPage</td><td>true或false</td><td>是否启用跳页</td></tr>
+<tr><td>title</td><td>false或 title标题</td><td>文档标题</td></tr>
+<tr><td>showPageList</td><td>true或false</td><td>是否启用翻页功能</td></tr>
+<tr><td>overflowX</td><td>true或false</td><td>是否允许横向滚动</td></tr>
+<tr><td>contros</td><td>[{'ysort':false, 'search':true}, {'ysort':false, 'search':false}]</td><td>控制对象</td></tr>
+<tr><td>orderColumn</td><td>{}</td><td>需要排序字段</tr>
+<tr><td>page_default_list</td><td>10</td><td>默认每页数量</tr>
+<tr><td>page_gap </td><td> 5</td><td>页码间隙</tr>
+<tr><td>page </td><td>1</td><td>页码</tr>
+<tr><td>page_size</td><td>10</td><td>每页条数</tr>
+<tr><td>page_select</td><td>[10,20,40,60,80,100]</td><td>页码选择</td></tr>
+<tr><td>server_url</td><td>request URL</td><td>请求数据url</tr>
+<tr><td>paramData</td><td>requestData</td><td>请求参数</tr>
+<tr><td>method</td><td>POST</td><td>方法</tr>
+<tr><td>next_btn_name</td><td>下一页</td><td>配置文案</tr>
+<tr><td>prev_btn_name</td><td>上一页</td><td>配置文案</tr>
+<tr><td>end_btn_name</td><td>末页</td><td>配置文案</tr>
+<tr><td>columns</td><td>{}</td><td>字段列表排序</tr>
+<tr><td>tableNode</td><td>.tableNodeClassName</td><td>table节点名称</tr>
+<tr><td>globalStyle</td><td>{}| 全局样式容器</tr>
+<tr><td>onReturnSubmit</td><td>true或false</td><td>是否启用回车搜索</tr>
+<tr><td>maskTable</td><td>true或false</td><td>查询数据时是否启用遮罩</tr>
+</table>
