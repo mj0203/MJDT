@@ -203,7 +203,7 @@ MJDT.myCustomFunction = function(All){
 <tr><td>overflowX</td><td>true或false</td><td>是否允许横向滚动</td></tr>
 <tr><td>contros</td><td>[{'ysort':false, 'search':true}, {'ysort':false, 'search':false}]</td><td>控制对象</td></tr>
 <tr><td>orderColumn</td><td>{}</td><td>需要排序字段</tr>
-<tr><td>page_default_list</td><td>10</td><td>默认每页数量</tr>
+<tr><td>page_default_list</td><td>10</td><td>默认首页显示页码</tr>
 <tr><td>page_gap </td><td> 5</td><td>页码间隙</tr>
 <tr><td>page </td><td>1</td><td>页码</tr>
 <tr><td>page_size</td><td>10</td><td>每页条数</tr>
