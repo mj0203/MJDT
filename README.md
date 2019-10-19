@@ -1,5 +1,9 @@
 # MJDT javascript 表格数据渲染
  
+- 效果图
+![example](http://oss-findoit-image.fire80.com/images/2019/10/19/10/5daa7b725039d.png 'example')
+
+
 ## 初始化方法可以查看底部init方法
 - 后台翻页数据加载框架
 
