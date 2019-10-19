@@ -1,13 +1,10 @@
-# MJDT javascript 表格数据渲染
- 
-- 效果图
+# MJDT JavaScript翻页数据加载框架
 ![example](http://oss-findoit-image.fire80.com/images/2019/10/19/10/5daa7b725039d.png 'example')
 
+# 配置
+http://localhost:port/index.html 查看demo（该插件依赖jquery）
 
-## 初始化方法可以查看底部init方法
-- 后台翻页数据加载框架
-
-**Example:**
+# Example:
 
 ### 1. generate(server_url, callback) 生成列表
 > - server_url = request URL (默认支持获取form表单action属性值)
